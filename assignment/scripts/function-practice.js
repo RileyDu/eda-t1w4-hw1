@@ -18,6 +18,7 @@ function helloName(name) {
 }
 // Remember to call the function to test
 console.log('Test - should say "Hello, Riley!"', helloName("Riley"));
+console.log('Test - should say "Hello, Lottie!"', helloName("Lottie"));
 
 // 3. Function to add two numbers together & return the result
 function addNumbers(firstNumber, secondNumber) {
@@ -52,16 +53,43 @@ console.log(
   isPositive(-7)
 );
 
-
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
-function getLast(array) {}
+function getLast(numArray) {
+  return numArray[numArray.length - 1];
+}
+console.log(
+  "Test - the last number is 3, 3 should be logged",
+  getLast([1, 2, 3])
+);
+console.log(
+  "Test - the array is empty, undefined should be logged",
+  getLast([])
+);
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
-function find(value, array) {}
-
+function find(value, array) {
+  for (i of array) {
+    if (i === value) {
+      return true;
+    }
+  }
+  return false;
+}
+console.log(
+  "Test - 3 is not listed in the array, false should be logged",
+  find(3, [6, 7, 4, 7])
+);
+console.log(
+  "Test - 6 is listed in the array, true should be logged",
+  find(6, [6, 1])
+);
+console.log(
+  "Test - 7 is not listed in the array, false should be logged",
+  find(7, [27, 77, 70, 67, 71, 34])
+);
 // ----------------------
 // Stretch Goals
 // ----------------------
