@@ -101,12 +101,14 @@ function isFirstLetter(letter, string) {}
 function sumAll(array) {
   let sum = 0;
   // TODO: loop to add items
-for (const num of array){
-  sum += num
-}
+  for (const num of array) {
+    sum += num;
+  }
   // TODO: return the sum
-  return sum
+  return sum;
 }
+const result1 = sumAll([2, 3, 4, 5]);
+console.log(`Test 1: Should be 14 (result: ${result1} ${result1 === 14} )`);
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
