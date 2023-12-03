@@ -118,7 +118,11 @@ console.log(`Test 1: Should be 14 (result: ${result1} ${result1 === 14})`);
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-function allPositive() {}
+function allPositive(array) {
+  for (num of array) {
+    num > 0
+  }
+}
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
