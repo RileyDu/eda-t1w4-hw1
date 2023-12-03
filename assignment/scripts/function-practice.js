@@ -98,9 +98,9 @@ console.log(
 function isFirstLetter(letter, string) {
   return string.charAt(0) === letter;
 }
-const letterCheck = 'a';
-const stringCheck = 'apple'
-const letterResult = isFirstLetter(letterCheck,stringCheck)
+const letterCheck = "a";
+const stringCheck = "apple";
+const letterResult = isFirstLetter(letterCheck, stringCheck);
 console.log(`Is '${letterCheck}' the first letter? ${letterResult}`);
 // 9. Function to return the sum of all numbers in an array
 function sumAll(array) {
