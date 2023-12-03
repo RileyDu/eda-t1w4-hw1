@@ -96,10 +96,12 @@ console.log(
 // 8. Function to check if a letter is the first letter in a
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-  return string.charAt(0) === letter();
+  return string.charAt(0) === letter;
 }
-
-
+const letterCheck = 'a';
+const stringCheck = 'apple'
+const letterResult = isFirstLetter(letterCheck,stringCheck)
+console.log(`Is '${letterCheck}' the first letter? ${letterResult}`);
 // 9. Function to return the sum of all numbers in an array
 function sumAll(array) {
   let sum = 0;
@@ -111,7 +113,7 @@ function sumAll(array) {
   return sum;
 }
 const result1 = sumAll([2, 3, 4, 5]);
-console.log(`Test 1: Should be 14 (result: ${result1} ${result1 === 14} )`);
+console.log(`Test 1: Should be 14 (result: ${result1} ${result1 === 14})`);
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
