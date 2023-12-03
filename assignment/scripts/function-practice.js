@@ -101,8 +101,11 @@ function isFirstLetter(letter, string) {}
 function sumAll(array) {
   let sum = 0;
   // TODO: loop to add items
-
+for (const num of array){
+  sum += num
+}
   // TODO: return the sum
+  return sum
 }
 
 // 10. Function to return a new array of all positive (greater than zero)
