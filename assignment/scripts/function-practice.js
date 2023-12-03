@@ -120,7 +120,7 @@ console.log(`Test 1: Should be 14 (result: ${result1} ${result1 === 14})`);
 //     return an empty array. Note: The input array should not change.
 function allPositive(array) {
   for (num of array) {
-    num > 0
+    num > 0;
   }
 }
 
