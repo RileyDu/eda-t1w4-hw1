@@ -95,7 +95,10 @@ console.log(
 // ----------------------
 // 8. Function to check if a letter is the first letter in a
 //    string. Return true if it is, and false otherwise
-function isFirstLetter(letter, string) {}
+function isFirstLetter(letter, string) {
+  return string.charAt(0) === letter();
+}
+
 
 // 9. Function to return the sum of all numbers in an array
 function sumAll(array) {
